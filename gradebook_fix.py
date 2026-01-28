@@ -51,9 +51,8 @@ def main():
             i += 1 # Adds 1 to variable i each loop
         else:
             result = "Pass"
+            print(str(i + 1), ": " + str(names[i]), " - ", str(scores[i]), " - " + str(result))
             i += 1 # Adds 1 to variable i each loop
-        print(str(len(names)))
-        print(str(i + 1), ": " + str(names[i]), " - ", str(scores[i]), " - " + str(result))
 
 # Call the main function - fixed syntax missing ()
 main()
