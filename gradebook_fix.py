@@ -31,7 +31,7 @@ def main():
             score_input = int(input("Score: ")) # Force input to integer data type rather than defaut string
             
             # Check for valid range
-            if (score_input <= 0) or (score_input >=100):
+            if (score_input < 0) or (score_input >100):
                 print("Invalid score. Must be 0-100.")
                 continue
             else:
@@ -48,11 +48,11 @@ def main():
     for i in range(len(names)):
         if scores[i] < 40:
             result = "Fail"
-            i += 1 # Adds 1 to variable i each loop
         else:
             result = "Pass"
-            print(str(i + 1), ": " + str(names[i]), " - ", str(scores[i]), " - " + str(result))
-            i += 1 # Adds 1 to variable i each loop
+        print(str(i + 1), ": ", str(names[i]), " - ", str(scores[i]), " - ", str(result))
 
 # Call the main function - fixed syntax missing ()
 main()
+
+# I started by adding to the comments where I was making changes, but forgot half way through, so there are some around, but most changes are not commented on
